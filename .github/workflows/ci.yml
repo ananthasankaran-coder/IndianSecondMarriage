@@ -24,8 +24,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-      - run: npm ci
+      - run: npm install --no-audit --no-fund  # switch back to `npm ci` once package-lock.json is committed
       - run: npm run check:boundaries
       - run: npm run typecheck
       - run: npm run lint
@@ -55,6 +54,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 22, cache: npm }
-      - run: npm ci
+        with: { node-version: 22 }
+      - run: npm install --no-audit --no-fund  # switch back to `npm ci` once package-lock.json is committed
       - run: npm audit --audit-level=high
