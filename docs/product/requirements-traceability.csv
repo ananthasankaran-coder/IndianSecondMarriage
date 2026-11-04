@@ -1,0 +1,29 @@
+requirement_id,title,priority,milestone,screens,apis,migrations,tests,status
+EPIC-12,Operations foundation (environments, migrations, CI),P0,M0,,GET /api/v1/health,20261104000001..4,tests/unit/core.test.ts;supabase/tests/rls/m0_foundation.test.sql,built-m0
+EPIC-07,Admin audit append-only,P0,M0/M6,ADM-011,,20261104000003,m0_foundation.test.sql (append-only),foundation-built
+EPIC-07,Feature flags,P0,M0/M6,ADM-012,,20261104000004,core.test.ts (flags);m0_foundation.test.sql,foundation-built
+EPIC-09,Outbox for notification delivery,P1,M0/M4/M7,UI-020,,20261104000003,m0_foundation.test.sql (outbox),foundation-built
+UI-001,Landing,P0,M0,UI-001,,,manual review,placeholder-built
+EPIC-01,Identity (OTP; age gate; pause/delete),P0,M1,UI-002;UI-003;UI-026;UI-027;UI-028,,,,planned
+US-001,Mobile OTP registration,P0,M1,UI-002;UI-003,,,,planned
+EPIC-02,Person & Story,P0,M2,UI-004..UI-006;UI-010..UI-012,,,,planned
+US-002,Progressive profile,P0,M2,UI-011,,,,planned
+US-003,Visibility control,P0,M2,UI-022,,,,planned
+EPIC-03,Discovery,P0,M3,UI-007..UI-009;UI-013,,,,planned
+US-004,Discovery,P0,M3,UI-008,,,,planned
+US-009,Block,P0,M3,UI-025,,,,planned
+EPIC-04,Interests,P0,M4,UI-014..UI-016,,,,planned
+US-005,Express Interest,P0,M4,UI-014,,,,planned
+US-006,Mutual Interest,P0,M4,UI-016,,,,planned
+EPIC-05,Communication,P0,M5,UI-017;UI-018,,,,planned
+US-007,Messaging,P0,M5,UI-018,,,,planned
+US-008,Report,P0,M5/M6,UI-024,,,,planned
+EPIC-06,Trust & Safety,P0,M6,UI-021;UI-023;ADM-005..007,,,,planned
+EPIC-07,Admin,P0,M6,ADM-001..012,,,,planned
+EPIC-08,Premium,P1,M7,UI-029;ADM-008,,,,planned
+US-011,Admin premium grant,P1,M7,ADM-008,,,,planned
+EPIC-09,Notifications,P1,M7,UI-020,,,,planned
+EPIC-11,Analytics,P1,M7,,,,,planned
+EPIC-10,AI assistance,P2,M8,UI-019,,,,planned
+US-012,AI writing,P2,M8,UI-019,,,,planned
+US-010,Pause,P0,M1,UI-027,,,,planned

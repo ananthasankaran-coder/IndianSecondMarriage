@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* DRAFT design tokens (open decision D17: founder to approve palette). Calm, unhurried, high contrast.
+   Contrast targets WCAG 2.2 AA: ink on paper ~14:1, primary on paper ~5.9:1. 8-point spacing via Tailwind scale. */
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --color-paper: #fbfaf7;
+  --color-surface: #ffffff;
+  --color-ink: #1f2a37;
+  --color-muted: #4b5563;
+  --color-line: #e3dfd6;
+  --color-primary: #2f5f58;
+  --color-primary-strong: #234a44;
+  --color-accent: #9a5a3f;
+  --color-focus: #1d4ed8;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+body {
+  font-family: var(--font-sans);
+  min-height: 100dvh;
+  -webkit-text-size-adjust: 100%;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
