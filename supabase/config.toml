@@ -1,0 +1,2 @@
+# Minimal Supabase CLI config. Local-stack defaults apply for anything not set here.
+project_id = "rdp-staging"
